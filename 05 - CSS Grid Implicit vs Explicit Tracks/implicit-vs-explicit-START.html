@@ -14,13 +14,26 @@
     <div class="item">2</div>
     <div class="item">3</div>
     <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
   </div>
-
+  
   <style>
     .container {
       display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 200px 400px;
+      grid-template-rows: 200px 400px;
+      grid-auto-rows: 100px 500px;
+      grid-auto-columns: 100px;
     }
   </style>
 </body>
 
 </html>
+solid line is where grid starts and stops
+the extra items are implicintly sized by the browser.
+any extra items with the grid auto rowswill define how big the rows are when they are added.
+next video is grid auto flow, instead of giving more rows you give more collumns.

@@ -21,8 +21,11 @@
       display: grid;
       grid-gap: 20px;
       border: 10px solid var(--yellow);
-      grid-template-columns: repeat(auto-fill, 150px);
+      /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+      grid-template-columns: fit-content(100px) 150px 150px 150px
+      /* fit content makes it auto but clamps it at a fixed value, so you can make it malleable but it cannot go bigger than  100px in this case */
     }
+
   </style>
 </body>
 

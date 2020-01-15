@@ -46,6 +46,16 @@
     .container {
       display: grid;
       grid-gap: 20px;
+      grid-template-areas: 
+        "hi hi hi hi bye bye bye bye"
+        "hi hi hi hi bye bye bye bye"
+        "hi hi hi hi bye bye bye bye"
+        "hi hi hi hi bye bye bye bye"
+    }
+    .item3{
+      /* grid-area: hi; */
+      grid-column: hi-start/bye-end;
+      grid-row-end: hi-end
     }
   </style>
 </body>
